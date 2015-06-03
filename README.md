@@ -1,0 +1,2 @@
+# InductanceMeter
+This is fairly accurate inductance meter for Arduino. I got the idea and schematic from http://hackaday.com/2011/07/24/using-an-arduino-to-measure-inductance/. The circuit worked fine, but I found that the measurements we too far off to my liking. The original project used pulseIn() to measure the op-amp pulse and it was not accurate enough for my purposes. I decided to rewrite the code from scratch and use level interrupts to signal a state change on the input pin. I manually verified the results using an oscilloscope and got very good results.
